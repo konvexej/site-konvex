@@ -9,8 +9,39 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-light">
-        <button class="btn btn-dark">Konvex</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- <nav class="navbar navbar-light bg-faded" style="background-color: #ABC; border-color: #000;"> -->
+        
+        <a class="navbar-brand" href="#">
+            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Konvex
+          </a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mr-2">
+              <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">A empresa <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Soluções</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Blog</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
     </nav>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
