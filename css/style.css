@@ -1,0 +1,67 @@
+/* footer */
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+}
+
+.contact-box i {
+    color: rgb(192, 240, 144);
+    border: 1px solid  rgb(192, 240, 144);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 17px;
+}
+
+.contact-title {
+    font-weight: bold;
+    color: rgb(133, 126, 126);
+}
+
+#msg-box p {
+    font-size: 20px;
+}
+
+.contact-form input [type="text"], .contact-form input [type="email"], .contact-form textarea {
+  margin-bottom: 16px;
+  border-radius: 0;  
+}
+
+#contact-form .main-btn {
+    width: 120px;
+    height: 50px;
+}
+
+#contact-form .main-btn:hover {
+    color:  rgb(133, 126, 126);
+}
+
+footer {
+    background-color: rgb(202, 209, 209);
+}
+
+/* copy */
+#copy-area {
+    background-color: darkgrey;
+}
+
+#copy-area .container {
+    padding: 11px 0;
+    text-align: center;
+}
+
+#copy-area .container p {
+    margin-bottom: 0;
+}
