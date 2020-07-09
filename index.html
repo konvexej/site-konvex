@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto mr-5">
           <li class="nav-item mr-2">
-            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">A empresa <span class="sr-only">(current)</span></a>
+            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#item-1">A empresa <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item mr-2">
             <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Soluções</a>
@@ -77,45 +77,52 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-<!--scrollspy-->
-<nav id="navbar-exemplo3" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#"></a>
-  <nav class="nav nav-pills flex-column">
-    <a class="nav-link" href="#item-1">sobre</a>
+
+  <!--scrollspy-->
+  <nav id="navbar-exemplo3" class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
     <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#item-1-1">quem somos?</a>
-    </nav>
-    <a class="nav-link" href="#item-2">visao</a>
-    <a class="nav-link" href="#item-3">missão com voce</a>
-    <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3.1</a>
-      <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3.2</a>
+      <a class="nav-link" href="#item-1">sobre</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-1-1">quem somos?</a>
+      </nav>
+      <a class="nav-link" href="#item-2">visao</a>
+      <a class="nav-link" href="#item-3">missão com voce</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3.1</a>
+        <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3.2</a>
+      </nav>
     </nav>
   </nav>
-</nav>
 
-<img src="imgs/sp.jpg.png" alt="..." class="img-thumbnail">
-
-
-<div data-spy="scroll" data-target="#navbar-exemplo3" data-offset="0">
-  <h4 id="item-1">sobre nós</h4>
-  <p> A Konvex Consultoria é uma Empresa Júnior da Universidade do Estado de
-     Santa Catarina, que realiza projetos de consultoria nas áreas de engenharia
-      e tecnologia. Formada por estudantes da instituição, 
-      nossa missão é realizar projetos que impactem e colaborem para o
-      desenvolvimento e crescimento de nossos clientes. Por meio de soluções em
-      Engenharia Mecânica, Elétrica e Tecnologia da Informação,
-      buscamos transformar a realidade do mercado, preparando nossos membros 
-      para se tornarem líderes empreendedores e capacitados, através da  execução 
-      de projetos de qualidade e alto impacto às empresas.</p>
-  <h5 id="item-1-1">visao</h5>
-  <p>``Impactar o mercado com a realização de projetos com membros altamente capacitados e inspirar outras EJ's da federação.``</p>
-  <h5 id="item-1-2">missão</h5>
-  <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
-  <h4 id="item-2">valores</h4>
-  <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
- 
-</div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="imgs/sp.jpg.png" alt="..." class="img-thumbnail ml-lg-auto mr-2">
+    </div>
+    
+    <div class="col-sm-6">
+      <div class="card mr-4" data-spy="scroll" data-target="#navbar-exemplo3" data-offset="0">
+        <div class="card-body">
+          <h4 class="card-title" id="item-1">A empresa</h4>
+          <p> A Konvex Consultoria é uma Empresa Júnior da Universidade do Estado de
+              Santa Catarina, que realiza projetos de consultoria nas áreas de engenharia
+              e tecnologia. Formada por estudantes da instituição, 
+              nossa missão é realizar projetos que impactem e colaborem para o
+              desenvolvimento e crescimento de nossos clientes. Por meio de soluções em
+              Engenharia Mecânica, Elétrica e Tecnologia da Informação,
+              buscamos transformar a realidade do mercado, preparando nossos membros 
+              para se tornarem líderes empreendedores e capacitados, através da  execução 
+              de projetos de qualidade e alto impacto às empresas.</p>
+          <h5 id="item-1-1">visao</h5>
+          <p>``Impactar o mercado com a realização de projetos com membros altamente capacitados e inspirar outras EJ's da federação.``</p>
+          <h5 id="item-1-2">missão</h5>
+          <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
+          <h4 id="item-2">valores</h4>
+          <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--Rodapé-->
   <footer>
@@ -130,7 +137,7 @@
           
           <div class="col-md-4 contact-box">
             <i class=""></i>
-            <p><span class="contact-title"> Telefone: </span> (47) 3481-7631</p>
+            <p><span class="contact-title">Telefone: </span> (47) 3481-7631</p>
             <p><span class="contact-title">Horário: </span> 08:00 às 18:00</p>  
           </div>
         
