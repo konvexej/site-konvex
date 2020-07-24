@@ -8,12 +8,14 @@
 
   <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/body.css">
+
 
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
   
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">
           <img src="imgs/logovertical.png" width="250" height="50" class="d-inline-block align-top" alt="">
         </a>
@@ -28,23 +30,27 @@
             <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#item-1">A empresa <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Soluções</a>
+            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#item-2">Soluções</a>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Blog</a>
+            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#item-3">Blog</a>
           </li>
           <li class="nav-item mr-2">
-            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#">Contato</a>
+            <a class="nav-link rounded" style="background-color: #0C6F3B;" href="#item-4">Contato</a>
           </li>
         </ul>
       </div>
 
       <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Busca</button>
       </form>
-  </nav>    
+  </nav>
 
+  <div class="fixed-bottom ml-5">
+    <img src="imgs/texugo.jpg (2).jpg" alt="..." class="img-thumbnail">
+    <span class="sr-only">Texugo</span>
+  </div>
 
   <!-- Corousel -->
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -56,15 +62,13 @@
       <div class="carousel-item active">
           <img src="imgs/slide-01.jpg.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5>teste</h5>
-            <p>igor</p>
+            <h5>Empresa Júnior de consultoria em engenharia do Centro de Ciências Tecnologicas UDESC</h5>
           </div>
       </div>
       <div class="carousel-item">
         <img src="imgs/slide-02.jpg.png" class="d-md-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>teste</h5>
-          <p>igor</p>
+          <h5>Empresa Júnior de consultoria em engenharia do Centro de Ciências Tecnologicas UDESC</h5>
         </div>
       </div>
     </div>
@@ -77,192 +81,189 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-<!--scrollspy-->
-<nav id="navbar-exemplo3" class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#"></a>
-   <nav class="nav nav-pills flex-column">
-      <a class="nav-link" href="#item-1">sobre</a>
-     <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#item-1-1">quem somos?</a>
-    </nav>
-      <a class="nav-link" href="#item-2">visao</a>
-      <a class="nav-link" href="#item-3">missão com voce</a>
-     <nav class="nav nav-pills flex-column">
-      <a class="nav-link ml-3 my-1" href="#item-3-1">Item 3.1</a>
-      <a class="nav-link ml-3 my-1" href="#item-3-2">Item 3.2</a>
-    </nav>
-  </nav>
   
+  <div class="mx-5 mt-4 mb-0 jumbotron" id="item-1">
+    <div class="row">
+      <div class="col-8 col-sm-6">
+        <h1>A Empresa</h1>
+        <img src="imgs/sp.jpg.png" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col-8 col-sm-6 my-5">
+        <p> A Konvex Consultoria é uma Empresa Júnior da Universidade do Estado de
+          Santa Catarina, que realiza projetos de consultoria nas áreas de engenharia
+          e tecnologia. Formada por estudantes da instituição, 
+          nossa missão é realizar projetos que impactem e colaborem para o
+          desenvolvimento e crescimento de nossos clientes. Por meio de soluções em
+          Engenharia Mecânica, Elétrica e Tecnologia da Informação,
+          buscamos transformar a realidade do mercado, preparando nossos membros 
+          para se tornarem líderes empreendedores e capacitados, através da  execução 
+          de projetos de qualidade e alto impacto às empresas.</p>
+      </div>
+    </div>
+  </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="card col order-last my-5 mr-2 shadow">
+            <div class="card-body">
+              <h4>Visão</h4>
+              <p>Impactar o mercado com a realização de projetos com membros altamente capacitados e inspirar outras EJ's da federação.</p>
+            </div>
+          </div>
+          <div class="card col order-last my-5 mr-2 shadow">
+            <div class="card-body">
+              <h4>Missão</h4>
+              <p>Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.</p>
+            </div>
+          </div>
+          <div class="card col order-last my-5 mr-2 shadow">
+            <div class="card-body">
+              <h4>Valores</h4>
+              <p>Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  <div class="text-center jumbotron jumbotron-fluid"><h1>Soluções</h1> <p>Mecânica e Elétrica</p></div>
+
+
   
-<div class="row">
-    <div class="col-8 col-sm-6">
-      <h1>Sobre</h1>
-      <img src="imgs/sp.jpg.png" alt="..." class="img-thumbnail">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="imgs/prototipo.jpg" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col order-12 card">
+        <div class="card-body">
+          <h2>BENEFÍCIOS</h2>
+          <p>REDUÇÃO DE CUSTOS</p>
+          <p> INOVAÇÃO</p>
+          <p>PERSONALIZAÇÃO</p>
+        </div>
+      </div>
+      <div class="col order-1"><h5>PROTOTIPAGEM</h5>
+        Uma vez que um problema ou necessidade é identificada, 
+        desenvolve-se uma ideia inicial, provavelmente mais básica
+        chamada de protótipo. Um protótipo é testado e aperfeiçoado 
+        até que o resultado final seja alcançado.
+      </div>
+    </div>
   </div>
-    <div class="col-8 col-sm-6 my-5">
-      <p> A Konvex Consultoria é uma Empresa Júnior da Universidade do Estado de
-       Santa Catarina, que realiza projetos de consultoria nas áreas de engenharia
-       e tecnologia. Formada por estudantes da instituição, 
-       nossa missão é realizar projetos que impactem e colaborem para o
-       desenvolvimento e crescimento de nossos clientes. Por meio de soluções em
-       Engenharia Mecânica, Elétrica e Tecnologia da Informação,
-       buscamos transformar a realidade do mercado, preparando nossos membros 
-       para se tornarem líderes empreendedores e capacitados, através da  execução 
-       de projetos de qualidade e alto impacto às empresas.</p>
-  </div>
-</div>
-
-
-
 
   <div class="container">
     <div class="row">
-        <div class="col order-last my-5">
-           <h4>visão</h4>
-           <p>``Impactar o mercado com a realização de projetos com membros altamente capacitados e inspirar outras EJ's da federação.``</p>
+      <div class="col my-5">
+        <img src="imgs/detalhamento.jpg" alt="..." class="img-thumbnail">
       </div>
-        <div class="col my-5">
-           <h4>missão</h4>
-           <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
+      <div class="col order-12 my-5 card">
+        <div class="card-body">
+          <h2>BENEFÍCIOS</h2>
+          <p>PRECISÃO</p>
+          <p> PERSONALIZAÇAO</p>
+        </div>
       </div>
-       <div class="col order-first my-5">
-           <h4>valores</h4>
-           <p>``Impactar a si e a sociedade, crescendo mutuamente, desenvolvendo ideias, resolvendo desafios.``</p>
+      <div class="col order-1 my-5"><h5>DETALHAMENTO</h5>
+        Detalhamento é uma representação de peça ou objeto que
+        queremos obter, ele é feito utilizando softwares de 
+        engenharia que permitem a produção de modelos em duas
+        e três dimensões. O que propicia ao produto ser melhor
+        visualizado, melhorando assim a distinção dos 
+        componentes presentes.
       </div>
     </div>
   </div>
-  
- <div class="text-center"><h1>soluções</h1> <p>Mecânica e eletrica</p>
-  <div class="row">
-    <img src="imgs/texugo.jpg (2).jpg" alt="..." class="img-thumbnail">
-  </div>
-  
-     </div>
-     <div class="container">
-      <div class="row">
-        <div class="col">
-       <img src="imgs/prototipo.jpg" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col order-12">
-          <h2>BENEFÍCIOS</h2>
-           <p>REDUÇÃO DE CUSTOS</p>
-           <p> INOVAÇÃO</p>
-           <p>PERSONALIZAÇÃO</p>
-        </div>
-        <div class="col order-1"><h5>PROTOTIPAGEM</h5>
-          Uma vez que um problema ou necessidade é identificada, 
-          desenvolve-se uma ideia inicial, provavelmente mais básica
-          chamada de protótipo. Um protótipo é testado e aperfeiçoado 
-          até que o resultado final seja alcançado.
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col my-5">
-       <img src="imgs/detalhamento.jpg" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col order-12 my-5">
-          <h2>BENEFÍCIOS</h2>
-           <p>PRECISAO</p>
-           <p> PERSONALIZAÇAO</p>
-        </div>
-        <div class="col order-1 my-5"><h5>DETALHAMENTO</h5>
-          Detalhamento é uma representação de peça ou objeto que
-          queremos obter, ele é feito utilizando softwares de 
-          engenharia que permitem a produção de modelos em duas
-          e três dimensões. O que propicia ao produto ser melhor
-          visualizado, melhorando assim a distinção dos 
-          componentes presentes.
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col my-5">
-       <img src="imgs/eficiencia.jpg" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col order-12 my-5">
-          <h2>BENEFÍCIOS</h2>
-           <p>REDUÇÃO DE CUSTOS</p>
-           <p> SUSTENTAVEL</p>
-        </div>
-        <div class="col order-1 my-5"> <h5>  EFICIÊNCIA ENERGÉTICA</h5>
-        
-          Por definição, a eficiência energética consiste na relação
-             entre a quantidade de energia empregada em uma atividade e
-             aquela disponibilizada para sua realização.
-      </div>
-    </div>
-
+  <div class="container">
     <div class="row">
       <div class="col my-5">
-     <img src="imgs/eficiencia.jpg" alt="..." class="img-thumbnail">
+        <img src="imgs/eficiencia.jpg" alt="..." class="img-thumbnail">
       </div>
-      <div class="col order-12 my-5">
-        <h2>BENEFÍCIOS</h2>
-         <p>FÁCIL OBTENÇÃO DE RECURSOS</p>
-         <p>INOVAÇÃO</p>
-         <p>SISTEMATIZAÇÃO DE PROCESSOS</p>
+      <div class="col order-12 my-5 card">
+        <div class="card-body">
+          <h2>BENEFÍCIOS</h2>
+          <p>REDUÇÃO DE CUSTOS</p>
+          <p> SUSTENTAVEL</p>
+        </div>
       </div>
-      <div class="col order-1 my-5"> <h5>ASSESSORIA EM DESENVOLVIMENTO DE PRODUTO</h5>
-        A Konvex presta assessoria às empresas que
-        desejam otimizar seus processos de desenvolvimento
-        de produtos, através de metodologias certificadas 
-        e de um acompanhamento consistente de cada uma das
-        etapas, desde o planejamento estratégico do produto
-        até o início de sua comercialização.
+      <div class="col order-1 my-5"> <h5>  EFICIÊNCIA ENERGÉTICA</h5>
+        
+        Por definição, a eficiência energética consiste na relação
+        entre a quantidade de energia empregada em uma atividade e
+        aquela disponibilizada para sua realização.
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col my-5">
+        <img src="imgs/eficiencia.jpg" alt="..." class="img-thumbnail">
+      </div>
+      <div class="col order-12 my-5 card">
+        <div class="card-body">
+          <h2>BENEFÍCIOS</h2>
+          <p>FÁCIL OBTENÇÃO DE RECURSOS</p>
+          <p>INOVAÇÃO</p>
+          <p>SISTEMATIZAÇÃO DE PROCESSOS</p>
+        </div>
+      </div>
+        <div class="col order-1 my-5"> <h5>ASSESSORIA EM DESENVOLVIMENTO DE PRODUTO</h5>
+          A Konvex presta assessoria às empresas que
+          desejam otimizar seus processos de desenvolvimento
+          de produtos, através de metodologias certificadas 
+          e de um acompanhamento consistente de cada uma das
+          etapas, desde o planejamento estratégico do produto
+          até o início de sua comercialização.
+        </div>
+      </div>
+  
+    <div class="text-center jumbotron jumbotron-fluid"><h1>Soluções</h1> <p>Computação e Sistemas</p> </div>
+     
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="imgs/desenvolvimento.jpg" alt="..." class="img-thumbnail">
+        </div>
+        <div class="col order-12 card">
+          <div class="card-body">
+            <h2>BENEFÍCIOS</h2>
+            <p>AUMENTO DAS VENDAS</p>
+            <p>MAIOR DIVULGAÇÃO</p>
+            <P>CREDIBILIDADE</P>
+          </div>
+        </div>
+        <div class="col order-1"><h5>DESENVOLVIMENTO DE WEBSITES</h5>
+          Para uma empresa, pequena, média ou grande, é extremamente
+          necessário que exista um web site de fácil acesso, 
+          visualmente agradável e organizado, para que clientes 
+          que venham a procura de seus serviços consigam obter
+          a informação necessária sem preocupação
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col my-5">
+          <img src="imgs/desenvolvimentosis.jpg" alt="..." class="img-thumbnail">
+        </div>
+        <div class="col order-12 my-5 card">
+          <div class="card-body">
+            <h2>BENEFÍCIOS</h2>
+            <p>PRATICIDADE</p>
+            <p>RAPIDEZ</p>
+            <P>OTIMIZAÇÃO DE PROCESSOS</P>
+          </div>
+        </div>
+        <div class="col order-1 my-5"><h5>DESENVOLVIMENTO DE SISTEMAS</h5>
+          O desenvolvimento de sistemas da Konvex consiste em 
+          desenvolver um sistema único capaz de suprir as necessidades 
+          diárias da sua empresa, de acordo com as especificações das
+          atividades realizadas nela.
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="text-center my-5"><h1>soluções</h1> <p>computaçao e sistemas</p>
-   <div class="row"> 
-    <img src="imgs/texugo.jpg (2).jpg" alt="..." class="img-thumbnail">
-  </div>
-</div> 
-<div class="container">
-  <div class="row">
-    <div class="col">
-   <img src="imgs/desenvolvimento.jpg" alt="..." class="img-thumbnail">
-    </div>
-    <div class="col order-12">
-      <h2>BENEFÍCIOS</h2>
-       <p>AUMENTO DAS VENDAS</p>
-       <p>MAIOR DIVULGAÇÃO</p>
-       <P>CREDIBILIDADE</P>
-    </div>
-    <div class="col order-1"><h5>DESENVOLVIMENTO DE WEBSITES</h5>
-      Para uma empresa, pequena, média ou grande, é extremamente
-      necessário que exista um web site de fácil acesso, 
-      visualmente agradável e organizado, para que clientes 
-      que venham a procura de seus serviços consigam obter
-      a informação necessária sem preocupação
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col my-5">
-   <img src="imgs/desenvolvimentosis.jpg" alt="..." class="img-thumbnail">
-    </div>
-    <div class="col order-12 my-5">
-      <h2>BENEFÍCIOS</h2>
-       <p>PRATICIDADE</p>
-       <p>RAPIDEZ</p>
-       <P>OTIMIZAÇÃO DE PROCESSOS</P>
-    </div>
-    <div class="col order-1 my-5"><h5>DESENVOLVIMENTO DE SISTEMAS</h5>
-      O desenvolvimento de sistemas da Konvex consiste em 
-      desenvolver um sistema único capaz de suprir as necessidades 
-      diárias da sua empresa, de acordo com as especificações das
-      atividades realizadas nela
-
-
-  </div>
-</div>
 
   <!--Rodapé-->
   <footer>
@@ -280,21 +281,21 @@
             <p><span class="contact-title">Telefone: </span> (47) 3481-7631</p>
             <p><span class="contact-title">Horário: </span> 08:00 às 18:00</p>  
           </div>
-        
+          
           <div class="col-md-4 contact-box">
             <i class="fas fa-envelope"></i>
             <p><span class="contact-title">Envie um email:</span> marketing@konvexconsultoria.com.br </p>
           </div>
-        
+          
           <div class="col-md-4 contact-box">
             <i class="fas fa-map-marker-alt"></i>
             <p><span class="contact-title"> Localização:</span> Rua Paulo Malschitzki, 200 - Centro de Convivências Harro Stamm, 2º piso - Sala de Reuniões </p>
           </div>
-        
+          
           <div class ="col-md-6" id="msg-box">
             <p> Deixe-nos uma mensagem: </p>
           </div>
-
+          
           <div class="col-md-6" id="contact-form">
             <form action="">
               <input type="email" class="form-control" placeholder="Email" name="email">
@@ -309,28 +310,25 @@
     </div>
     <div class="container">
       <div class="row">
-
-      </div>
-    </div>
-
-  </footer>
-  
-  <footer>
-    <div id="contact-area">
-      <div>
-        <div id="copy=area">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <p> Desenvolvido por <a href=""> Konvex Consultoria </a> &copy; 2020 </p>
+        <div id="contact-area">
+          <div>
+            <div id="copy=area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p> Desenvolvido por <a href=""> Konvex Consultoria </a> &copy; 2020 </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </div>    
       </div>
     </div>
+    
   </footer>
-
+    
+    
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/popper.js/dist/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
